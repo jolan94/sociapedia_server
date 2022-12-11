@@ -60,6 +60,9 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => {
+    app.use("/", (req, res)=> {
+      res.send("Welcome to the sociapedia server")
+    })
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
 
     /* ADD DATA ONE TIME */
