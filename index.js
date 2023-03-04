@@ -64,7 +64,7 @@ mongoose
     app.use("/", (req, res)=> {
       res.send("Welcome to the sociapedia server")
     })
-    app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
+    app.listen(PORT, () => console.log(` Server started on http://localhost:${PORT}/  Server Port: ${PORT}`));
 
     /* ADD DATA ONE TIME */
     // User.insertMany(users);
